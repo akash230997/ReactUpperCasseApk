@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './Custom Components/Navbar';
+import Form from './Custom Components/Form';
+import MastiwithStates from "./Custom Components/MastiwithStates";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar logo="CAPTAINS HUB" aboutus = 'What You Want To Know?' />
+      <Form heading = "Please Write Here Something About You!!" thank = "Thank You😊" />
+      <MastiwithStates/>
+    </>
   );
 }
 
